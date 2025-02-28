@@ -5,15 +5,23 @@
 
 html,
 body {
-  background-color: black;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
+  background-image: url(./v882-kul-42-a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
+
 h1 {
   font-family: 'Space Grotesk', sans-serif;
   color: palevioletred;
   font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .navbar {
@@ -22,12 +30,15 @@ h1 {
   flex-wrap: nowrap;
   top: 0;
   width: 100%;
-  background-image: linear-gradient(to right, skyblue, purple);
+  background-image: linear-gradient(to right, skyblue, violet, purple);
   justify-content: flex-end;
 }
 
 .navbar ul {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 0;
   margin: 0;
@@ -61,6 +72,7 @@ h1 {
   margin-left: 50px;
   margin-right: 10px;
 }
+
 .myphoto {
   height: 100%;
   width: 100%;
@@ -68,25 +80,60 @@ h1 {
   align-items: flex-start;
   justify-content: start;
 }
+
 .myphoto img {
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
-  border: 3px solid palevioletred;
-  margin-top: 150px;
+  border: 4px solid gray;
+  margin-top: 100px;
+  max-width: 100%;
+  display: block;
 }
 
 .h1kia {
   flex-direction: column;
-  background-color: black;
-  justify-content: end;
+  align-items: center;
   padding: 10px;
   margin: 10px 10px;
+  flex-wrap: nowrap;
+  display: block;
+  background-color: black;
 }
 
 .introduction {
-  background-color: whitesmoke;
+  background-color: black;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
+}
+
+.aboutme {
+  color: palevioletred;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 50px;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+p {
+  color: palevioletred;
+  font-size: 2rem;
+  font-family: sans-serif;
 }
 
 /* for mobile devices */
@@ -112,12 +159,25 @@ h1 {
   }
 
   .myphoto img {
+    max-width: 100%;
     height: 200px;
     width: 200px;
     margin-top: 50px;
+    display: block;
   }
 
   .navbar li {
     display: inline-block;
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
