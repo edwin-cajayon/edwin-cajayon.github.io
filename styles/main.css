@@ -1,0 +1,123 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: palevioletred;
+  font-size: 5rem;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, skyblue, purple);
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.home,
+.tecblog,
+.hskills {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  background-color: pink;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#astro {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  justify-content: start;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+.myphoto {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.myphoto img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  border: 3px solid palevioletred;
+  margin-top: 150px;
+}
+
+.h1kia {
+  flex-direction: column;
+  background-color: black;
+  justify-content: end;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+.introduction {
+  background-color: whitesmoke;
+  display: flex;
+}
+
+/* for mobile devices */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .myphoto img {
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+  }
+
+  .navbar li {
+    display: inline-block;
+  }
+}
