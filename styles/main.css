@@ -136,6 +136,18 @@ p {
   font-family: sans-serif;
 }
 
+/*human skills page
+
+.hsbox1 p {
+  height: 500px;
+  width: 500px;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+  display: flex;
+}
+  */
+
 /* for mobile devices */
 @media (max-width: 768px) {
   h1 {
