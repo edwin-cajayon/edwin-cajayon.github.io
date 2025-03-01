@@ -136,6 +136,62 @@ p {
   font-family: sans-serif;
 }
 
+/* tech blog styles*/
+
+.tbbox1,
+.hsbox1 h1 {
+  color: palevioletred;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 50px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.tbbox2 {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+button {
+  height: 100px;
+  width: 150px;
+  background-image: linear-gradient(to right, skyblue, purple);
+  border-radius: 20px;
+  text-decoration: none;
+  border-color: palevioletred;
+  margin: 20px;
+  padding: 15px;
+}
+.tehoutaewa {
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.cssconcepts h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: palevioletred;
+}
+
+.burger {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /*human skills page
 
 .hsbox1 p {
