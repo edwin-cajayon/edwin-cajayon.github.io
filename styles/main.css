@@ -7,11 +7,20 @@ html,
 body {
   background-image: url(./v882-kul-42-a.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+footer p {
+  background-color: black;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  padding: 40px 0px 40px 0px;
+  border: 2px;
+  font-size: 0.7rem;
 }
 
 h1 {
