@@ -33,6 +33,13 @@ h1 {
   margin: 20px 0;
 }
 
+h2 {
+  color: palevioletred;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .navbar {
   position: fixed;
   display: flex;
@@ -140,9 +147,11 @@ h1 {
 }
 
 p {
-  color: palevioletred;
-  font-size: 2rem;
+  color: gray;
+  font-size: 1.5rem;
   font-family: sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* tech blog styles*/
