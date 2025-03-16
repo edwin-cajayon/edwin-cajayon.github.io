@@ -211,6 +211,12 @@ a {
   width: 450px;
   height: 450px;
 }
+
+.jsdom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*human skills page
 
 .hsbox1 p {
