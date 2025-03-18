@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-repeat: repeat;
   margin: 0;
-  padding: 0;
+  padding-top: 50px;
   overflow-x: hidden;
   overflow-y: auto;
 }
