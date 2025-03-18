@@ -5,9 +5,10 @@
 
 html,
 body {
-  background-image: url(./v882-kul-42-a.jpg);
+  background-image: url(../gradient-abstract-wireframe-background_23-2149009903.jpeg);
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
   margin: 0;
   padding-top: 50px;
   overflow-x: hidden;
@@ -15,11 +16,10 @@ body {
 }
 
 footer p {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 20px 0px 20px 0px;
   padding: 40px 0px 40px 0px;
-  border: 2px;
   font-size: 0.7rem;
 }
 
@@ -28,8 +28,8 @@ h1 {
   color: palevioletred;
   font-size: 5rem;
   display: flex;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
   margin: 20px 0;
 }
 
@@ -37,7 +37,7 @@ h2 {
   color: palevioletred;
   font-size: 1.3rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar {
@@ -65,6 +65,23 @@ h2 {
   padding: 10px;
 }
 
+.navbar a:hover {
+  background-color: violet;
+  transform: scale(1.1);
+}
+
+.navbar a {
+  text-align: center;
+  padding: 10px 15px;
+  background-color: pink;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
 .home,
 .tecblog,
 .hskills {
@@ -83,7 +100,7 @@ h2 {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  justify-content: start;
+  justify-content: center;
   margin-top: 100px;
   margin-left: 50px;
   margin-right: 10px;
@@ -93,8 +110,8 @@ h2 {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
 }
 
 .myphoto img {
@@ -114,11 +131,11 @@ h2 {
   margin: 10px 10px;
   flex-wrap: nowrap;
   display: block;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .introduction {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -140,7 +157,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   margin: 50px;
   padding: 35px;
   border-radius: 10px;
@@ -151,7 +168,7 @@ p {
   font-size: 1.5rem;
   font-family: sans-serif;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* tech blog styles*/
@@ -164,14 +181,14 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   margin: 50px;
   padding: 50px;
   border-radius: 10px;
 }
 
 .tbbox2 {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,6 +205,12 @@ button {
   margin: 20px;
   padding: 15px;
 }
+button:hover {
+  background-image: linear-gradient(to right, violet, skyblue);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 .tehoutaewa {
   font-family: monospace;
   font-size: 1.1rem;
@@ -217,17 +240,23 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-/*human skills page
 
-.hsbox1 p {
-  height: 500px;
-  width: 500px;
-  align-items: center;
-  margin: 10px;
-  justify-content: center;
-  display: flex;
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
 }
-  */
+
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+*/
 
 /* for mobile devices */
 @media (max-width: 768px) {
@@ -273,4 +302,11 @@ a {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+}
+
+.burger-menu {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 10px;
 }
