@@ -135,7 +135,7 @@ h2 {
 }
 
 .introduction {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
   overflow: hidden;
   display: flex;
   justify-content: center;

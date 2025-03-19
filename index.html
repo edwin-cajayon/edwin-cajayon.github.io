@@ -62,8 +62,21 @@
         learning never stops.
       </p>
     </div>
-    <p>It will eventually contain a list of links to all my blogs.</p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function updateTime() {
+        const today = new Date()
+        const formattedTime = today.toLocaleTimeString()
+
+        document.getElementById('currentTime').textContent = formattedTime
+      })
+      updateTime()
+
+      setInterval(updateTime, 1000)
+    </script>
+
+    <p id="currentTime"></p>
   </body>
+
   <footer>
     <p>EDWIN CAJAYON | DEV ACADEMY | KARENGO 2025</p>
   </footer>
