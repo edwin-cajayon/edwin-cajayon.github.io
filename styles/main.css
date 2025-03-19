@@ -104,10 +104,11 @@ h2 {
   margin-top: 100px;
   margin-left: 50px;
   margin-right: 10px;
+  display: flex;
 }
 
 .myphoto {
-  height: 100%;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -302,7 +303,21 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
+  #astro {
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+
+  .myphoto img {
+    width: 180px;
+    height: 180px;
+    margin-top: 50px;
+
+  }
 }
+}
+
 
 /*.burger-menu {
   display: block;
