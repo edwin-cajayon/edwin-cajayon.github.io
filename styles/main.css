@@ -15,9 +15,6 @@ body {
   overflow-y: auto;
 }
 
-
-
-
 footer p {
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -275,7 +272,7 @@ footer {
   text-decoration: none;
 }
 
-.card{
+.card {
   width: 150px;
   height: 200px;
   background: #07182e;
@@ -286,8 +283,6 @@ footer {
   overflow: hidden;
   border-radius: 20px;
 }
-  
-
 
 .card h3 {
   z-index: 1;
@@ -295,10 +290,14 @@ footer {
   font-size: 1.5em;
 }
 .card::before {
-  content:'';
+  content: '';
   position: absolute;
-  width:100px;
-  background-image: linear-gradient(180deg, rgb(0, 183,255), rgb(255, 48, 255));
+  width: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
   height: 130%;
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
@@ -308,14 +307,14 @@ footer {
   from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
 
 .card::after {
-  content:"";
-  position:absolute;
+  content: '';
+  position: absolute;
   background: #07182e;
   inset: 5px;
   border-radius: 15px;
@@ -374,11 +373,8 @@ footer {
     width: 180px;
     height: 180px;
     margin-top: 50px;
-
   }
 }
-}
-
 
 /*.burger-menu {
   display: block;
